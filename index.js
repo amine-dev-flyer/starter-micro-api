@@ -7,10 +7,11 @@ http
 
     count++;
     const date = new Date().toJSON().slice(0, 10);
+    const datetime = new Date().toJSON;
 
     console.log("---------------------");
     console.log("Count :" + count);
-    console.log("Date :" + date);
+    console.log("DateTime :" + datetime);
 
     res.write("!!" + date);
     res.end();
