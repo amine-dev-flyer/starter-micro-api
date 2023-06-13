@@ -16,7 +16,7 @@ http
     res.write("!!" + datetime);
     res.end();
 
-    fs.appendFile(
+    fs.writeFileSync(
       `file-${date}--${count}.json`,
       JSON.stringify(""),
       "utf8",
