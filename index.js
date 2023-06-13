@@ -1,6 +1,7 @@
 
 /*import fs from "fs"*/
 
+http.createServer(function (req, res) {
 
 var count = 0;
 
@@ -11,6 +12,9 @@ var count = 0;
     console.log('---------------------');
     console.log('Count :'+count);
     console.log('Date :'+date);
+    
+    
+    }).listen(process.env.PORT || 3000);
 
     /*fs.appendFile(`file-${date}--${count}.json`, JSON.stringify(''), "utf8", function(err) {
         if (err) throw err;
