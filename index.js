@@ -1,9 +1,9 @@
-import cron from "node-cron"
+
 /*import fs from "fs"*/
 
 
 var count = 0;
-cron.schedule('*/5 * * * * *', function() {
+
     
     count++;
     const date = new Date().toJSON().slice(0, 10);
