@@ -16,9 +16,9 @@ var count = 0;
         if (err) throw err;
         console.log("!!! File saved.");
       }); 
-      */
+     
   });
-
+ */
   //getQuotes();
 
 
