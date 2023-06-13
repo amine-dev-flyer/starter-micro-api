@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-cron": "^3.0.0",
+    "puppeteer": "^20.6.0"
   },
   "type": "module",
   "types": "module"
