@@ -13,7 +13,7 @@ http
     console.log("Count :" + count);
     console.log("DateTime :" + datetime);
 
-    res.write("!!" + date);
+    res.write("!!" + datetime);
     res.end();
 
     fs.appendFile(
