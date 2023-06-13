@@ -1,5 +1,5 @@
 import http from 'http';
-/*import fs from "fs"*/
+import fs from "fs"
 
 http.createServer(function (req, res) {
 
@@ -15,6 +15,12 @@ var count = 0;
     
     res.write('!!'+date);
     res.end(); 
+    
+    fs.appendFile(`file-${date}--${count}.json`, JSON.stringify(''), "utf8", function(err) {
+        if (err) throw err;
+        console.log("!!! File saved.");
+      });  
+    });
     
     }).listen(process.env.PORT || 3000);
 
