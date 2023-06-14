@@ -16,13 +16,14 @@ http
     res.write("!!" + datetime);
     res.end();
 
-    fs.appendFile(
+    fs.writeFile(
       `file-${date}--${count}.json`,
       JSON.stringify(""),
       "utf8",
-      function (err) {
-        if (err) throw err;
-        console.log("!!! File saved.");
+      (err) => {
+      if (err) {
+        console.error(err);
+        return;
       }
     );
   })
